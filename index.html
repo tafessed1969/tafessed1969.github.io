@@ -9,15 +9,15 @@
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
-      margin: 20px;
+      margin: 0;
+      padding: 0;
       background-color: #f9f9f9;
       color: #333;
     }
-    h1, h2, h3 {
-      color: #2c3e50;
-    }
+    h1, h2, h3 { color: #2c3e50; }
     p { margin-bottom: 12px; }
-    a { color: #1a0dab; }
+    a { color: #1a0dab; text-decoration: none; }
+    a:hover { text-decoration: underline; }
     ol, ul { margin-bottom: 16px; }
     .image-container {
       max-width: 600px;
@@ -56,17 +56,43 @@
       font-size: 48px;
       margin-top: 30px;
     }
-    .centered {
+    .centered { text-align: center; }
+    /* Top navigation bar */
+    .navbar {
+      background-color: #2c3e50;
+      overflow: hidden;
+      padding: 12px 20px;
+    }
+    .navbar a {
+      float: left;
+      color: white;
       text-align: center;
+      padding: 12px;
+      margin-right: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .navbar a:hover {
+      background-color: #1a252f;
+      border-radius: 4px;
     }
   </style>
 </head>
 <body>
 
-<h1>Demeke Tafesse Kebede – HTML Notes</h1>
+<!-- Navigation bar -->
+<div class="navbar">
+  <a href="#html-notes">HTML Notes</a>
+  <a href="#chemistry-notes">Chemistry Notes</a>
+  <a href="#images">Images</a>
+  <a href="#lists">Lists</a>
+  <a href="#links">Links</a>
+</div>
+
+<h1 id="html-notes">Demeke Tafesse Kebede – HTML Notes</h1>
 <p>This page is a collection of my notes, images, and examples about HTML and CSS.</p>
 
-<!-- Family photo -->
+<!-- Family photo at the beginning -->
 <div class="image-container">
   <img src="Demeke_TK_Family_Photo.jpg" alt="Demeke Tafesse Family Photo">
   <div class="caption">Demeke Tafesse Kebede – Family Photo</div>
@@ -84,7 +110,7 @@
 <p>My name is <sub>Demeke Tafesse Kebede</sub><br>My name is <sup>Demeke Tafesse Kebede</sup></p>
 <p>This is a <em>very <mark>important</mark></em> message.</p>
 
-<h2>My Chemistry Notes</h2>
+<h2 id="chemistry-notes">My Chemistry Notes</h2>
 <p><strong>Molecule name:</strong> <em>Sulfur hexafluoride</em></p>
 <p><strong>Molecular formula:</strong> SF<sub>6</sub></p>
 <p><strong>Note:</strong> This gas has a much higher density than air. Basically the opposite of helium. <mark>Crazy!</mark></p>
@@ -99,7 +125,7 @@
   <p>Just don't call me late for dinner.</p>
 </div>
 
-<h2>Ordered and Unordered Lists</h2>
+<h2 id="lists">Ordered and Unordered Lists</h2>
 <ol>
   <li>Learn HTML.</li>
   <li>Learn CSS.</li>
@@ -153,6 +179,12 @@
   <li>Cucumbers</li>
 </ol>
 
+<!-- Family photo in the middle -->
+<div class="image-container" id="images">
+  <img src="Demeke_TK_Family_Photo.jpg" alt="Demeke Tafesse Family Photo">
+  <div class="caption">Demeke Tafesse Kebede – Family Photo</div>
+</div>
+
 <h2>Paragraph Color Examples</h2>
 <p style="color: red;">Make me red!</p>
 <p style="color: green;">Make me green!</p>
@@ -164,7 +196,7 @@
 <p class="centered">Let’s make it stylish</p>
 <p style="color: blue; text-align: center;">Hello world!</p>
 
-<h2>Links</h2>
+<h2 id="links">Links</h2>
 <p><a href="https://github.com/">GitHub</a></p>
 <p><a href="http://google.com/">The Example Page</a></p>
 <p><a href="https://www.udacity.com">Udacity</a></p>
@@ -180,7 +212,7 @@
   <div class="red_box"></div>
 </div>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi sit amet mauris commodo. Vitae elementum curabitur vitae nunc sed velit dignissim sodales ut...</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
 
 <h2>Custom Font Section</h2>
 <div class="custom-body">Making the Web Beautiful!</div>
