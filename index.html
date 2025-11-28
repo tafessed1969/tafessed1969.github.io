@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Demeke Tafesse – Full HTML Notes</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -12,18 +13,10 @@
       background-color: #f9f9f9;
       color: #333;
     }
-    h1, h2, h3 {
-      color: #2c3e50;
-    }
-    p {
-      margin-bottom: 12px;
-    }
-    a {
-      color: #1a0dab;
-    }
-    ol, ul {
-      margin-bottom: 16px;
-    }
+    h1, h2, h3 { color: #2c3e50; }
+    p { margin-bottom: 12px; }
+    a { color: #1a0dab; }
+    ol, ul { margin-bottom: 16px; }
     .image-container {
       max-width: 600px;
       margin: 20px auto;
@@ -59,109 +52,167 @@
     .custom-body {
       font-family: 'Tangerine', serif;
       font-size: 48px;
+      margin-top: 30px;
     }
-    .centered {
+    .centered { text-align: center; }
+    /* Navigation bar styles */
+    .navbar {
+      background-color: #2c3e50;
+      overflow: hidden;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    .navbar a {
+      float: left;
+      color: #f2f2f2;
       text-align: center;
+      padding: 8px 16px;
+      text-decoration: none;
+      font-weight: bold;
     }
+    .navbar a:hover { background-color: #ddd; color: black; }
   </style>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 </head>
 <body>
 
-  <h1>Demeke Tafesse Kebede – HTML Notes</h1>
-  <p>This page is a collection of my notes, images, and examples about HTML and CSS.</p>
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="#top">Top</a>
+  <a href="#html-notes">HTML Notes</a>
+  <a href="#chemistry-notes">Chemistry</a>
+  <a href="#image-notes">Images</a>
+  <a href="#lists">Lists</a>
+  <a href="#haikus">Haikus</a>
+  <a href="#boxes">Boxes</a>
+</div>
 
-  <!-- Family photo -->
-  <div class="image-container">
-    <img src="Demeke_TK_Family_Photo.jpg" alt="Demeke Tafesse Family Photo">
-    <div class="caption">Demeke Tafesse Kebede – Family Photo</div>
-  </div>
+<h1 id="top">Demeke Tafesse Kebede – HTML Notes</h1>
+<p>This page is a collection of my notes, images, and examples about HTML and CSS.</p>
 
-  <!-- Intro -->
-  <h2>The Web</h2>
-  <p>The Web (or World Wide Web) is a collection of documents and other files. Most documents are made using HTML.</p>
+<!-- Family photo at the beginning -->
+<div class="image-container">
+  <img src="Demeke_TK_Family_Photo.jpg" alt="Demeke Tafesse Family Photo">
+  <div class="caption">Demeke Tafesse Kebede – Family Photo</div>
+</div>
 
-  <h2>What is HTML?</h2>
-  <p>HTML stands for <em>Hypertext Markup Language</em>. It's used to define the structure or layout of a web page.</p>
+<h2 id="html-notes">The Web</h2>
+<p>The Web (or World Wide Web) is a collection of documents and other files. Most documents are made using HTML.</p>
 
-  <!-- Whitespace examples -->
-  <h2>Whitespace Examples</h2>
-  <p>Aah! I'm confused about <em>whitespace</em>.</p>
-  <p>Aah!<br>I'm<br>confused<br>about <em>whitespace</em>.</p>
-  <p>My name is <sub>Demeke Tafesse Kebede</sub><br>My name is <sup>Demeke Tafesse Kebede</sup></p>
-  <p>This is a <em>very <mark>important</mark></em> message.</p>
+<h2>What is HTML?</h2>
+<p>HTML stands for <em>Hypertext Markup Language</em>. It's used to define the structure or layout of a web page.</p>
 
-  <!-- Chemistry notes -->
-  <h2>My Chemistry Notes</h2>
-  <p><strong>Molecule name:</strong> <em>Sulfur hexafluoride</em></p>
-  <p><strong>Molecular formula:</strong> SF<sub>6</sub></p>
-  <p><strong>Note:</strong> This gas has a much higher density than air. Basically the opposite of helium. <mark>Crazy!</mark></p>
+<h2>Whitespace Examples</h2>
+<p>Aah! I'm confused about <em>whitespace</em>.</p>
+<p>Aah!<br>I'm<br>confused<br>about <em>whitespace</em>.</p>
+<p>My name is <sub>Demeke Tafesse Kebede</sub><br>My name is <sup>Demeke Tafesse Kebede</sup></p>
+<p>This is a <em>very <mark>important</mark></em> message.</p>
 
-  <!-- Paragraph color examples -->
-  <p style="color: red;">Make me red!</p>
-  <p style="color: green;">Make me green!</p>
-  <p style="color: blue;">Make me blue!</p>
+<h2 id="chemistry-notes">My Chemistry Notes</h2>
+<p><strong>Molecule name:</strong> <em>Sulfur hexafluoride</em></p>
+<p><strong>Molecular formula:</strong> SF<sub>6</sub></p>
+<p><strong>Note:</strong> This gas has a much higher density than air. Basically the opposite of helium. <mark>Crazy!</mark></p>
 
-  <!-- Centered text / haiku -->
-  <p class="centered">This is a haiku</p>
-  <p class="centered">So I want each line centered</p>
-  <p class="centered">Let’s make it stylish</p>
-  <p style="color: blue; text-align: center;">Hello world!</p>
+<div>
+  <p>This is the first paragraph. The background color of these paragraphs have been colored to distinguish them from their parent element.</p>
+  <p>This is the second paragraph.</p>
+</div>
 
-  <!-- Lists -->
-  <h2>Lists</h2>
-  <ol>
-    <li>Learn HTML</li>
-    <li>Learn CSS</li>
-    <li>Learn Python</li>
-    <li>Save the world</li>
-  </ol>
+<div>
+  <p>Call me Ishmael.</p>
+  <p>Just don't call me late for dinner.</p>
+</div>
 
-  <ul>
-    <li>Demeke</li>
-    <li>Tafesse</li>
-    <li>Kebede</li>
-  </ul>
+<h2 id="lists">Ordered and Unordered Lists</h2>
+<ol>
+  <li>Learn HTML.</li>
+  <li>Learn CSS.</li>
+  <li>Learn Python.</li>
+  <li>Save the world.</li>
+</ol>
+<ol>
+  <li>Demeke</li>
+  <li>Tafesse</li>
+  <li>Kebede</li>
+</ol>
+<ul>
+  <li>Demeke</li>
+  <li>Tafesse</li>
+  <li>Kebede</li>
+</ul>
 
-  <h2>Animals Example</h2>
-  <ul>
-    <li>Mammals
-      <ol type="a">
-        <li>Raccoons</li>
-        <li>Gorillas</li>
-      </ol>
-    </li>
-    <li>Reptiles
-      <ol type="a">
-        <li>Iguanas</li>
-        <li>Cobras</li>
-      </ol>
-    </li>
-    <li>Birds
-      <ol type="a">
-        <li>Ostriches</li>
-        <li>Ravens</li>
-      </ol>
-    </li>
-  </ul>
+<h2>Animals</h2>
+<ul>
+  <li>Mammals
+    <ol type="a">
+      <li>Raccoons</li>
+      <li>Gorillas</li>
+    </ol>
+  </li>
+  <li>Reptiles
+    <ol type="a">
+      <li>Iguanas</li>
+      <li>Cobras</li>
+    </ol>
+  </li>
+  <li>Birds
+    <ol type="a">
+      <li>Ostriches</li>
+      <li>Ravens</li>
+    </ol>
+  </li>
+</ul>
 
-  <!-- Floating boxes -->
-  <div class="blue_box">
-    Blue box
-    <div class="red_box"></div>
-  </div>
+<ul>
+  <li>Yikes!</li>
+  <li>This</li>
+  <li>keeps</li>
+  <li>indenting</li>
+  <li>to the right!</li>
+</ul>
 
-  <!-- More images -->
-  <img src="https://placebear.com/200/200" alt="A picture of a bear.">
-  <img src="https://placekitten.com/200/200" alt="A picture of a kitten.">
+<ol>
+  <li>Tomatoes</li>
+  <li>Carrots</li>
+  <li>Cucumbers</li>
+</ol>
 
-  <!-- Links -->
-  <h2>Links</h2>
-  <p><a href="https://github.com/">GitHub</a></p>
-  <p><a href="http://google.com/">The Example Page</a></p>
+<h2 id="image-notes">Family Photo in the Middle</h2>
+<div class="image-container">
+  <img src="Demeke_TK_Family_Photo.jpg" alt="Demeke Tafesse Family Photo">
+  <div class="caption">Demeke Tafesse Kebede – Family Photo</div>
+</div>
 
-  <!-- Custom font section -->
-  <div class="custom-body">Making the Web Beautiful!</div>
+<h2>Paragraph Color Examples</h2>
+<p style="color: red;">Make me red!</p>
+<p style="color: green;">Make me green!</p>
+<p style="color: blue;">Make me blue!</p>
+
+<h2 id="haikus">Haikus / Centered Text</h2>
+<p class="centered">This is a haiku</p>
+<p class="centered">So I want each line centered</p>
+<p class="centered">Let’s make it stylish</p>
+<p style="color: blue; text-align: center;">Hello world!</p>
+
+<h2>Links</h2>
+<p><a href="https://github.com/">GitHub</a></p>
+<p><a href="http://google.com/">The Example Page</a></p>
+<p><a href="https://www.udacity.com">Udacity</a></p>
+
+<h2>Placeholder Images</h2>
+<img src="https://placebear.com/200/200" alt="A picture of a bear.">
+<img src="https://placekitten.com/200/200" alt="A picture of a kitten.">
+<img src="https://placebear.com/150/150" alt="A picture of a bear.">
+<img src="https://placecats.com/150/150" alt="A picture of a kitten.">
+
+<h2 id="boxes">Floating Boxes</h2>
+<div class="blue_box">Hooray, a blue box!
+  <div class="red_box"></div>
+</div>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi sit amet mauris commodo. Vitae elementum curabitur vitae nunc sed velit dignissim sodales ut...</p>
+
+<h2>Custom Font Section</h2>
+<div class="custom-body">Making the Web Beautiful!</div>
 
 </body>
 </html>
