@@ -1,219 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Demeke Tafesse Kebede – Full Training & Family</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-  <style>
-    :root{--bg:#f4f6f8;--card:#fff;--muted:#555;--accent:#2c3e50}
-    body{font-family:Arial,Helvetica,sans-serif;margin:0;background:var(--bg);color:#222;line-height:1.6}
-    header{background:linear-gradient(90deg,#264653,#2a9d8f);color:white;padding:18px 20px}
-    header h1{margin:0;font-size:24px}
-    nav{background:var(--accent);padding:10px 20px;display:flex;gap:12px;flex-wrap:wrap}
-    nav a{color:#fff;text-decoration:none;font-weight:600;padding:8px 10px;border-radius:6px}
-    nav a:hover{background:#1f2b33}
-    .container{max-width:1000px;margin:18px auto;padding:0 16px}
-    .card{background:var(--card);padding:18px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);margin-bottom:18px}
-    .image-container{max-width:700px;margin:18px auto;text-align:center}
-    .image-container img{width:100%;height:auto;border:2px solid #ddd;border-radius:8px}
-    .caption{font-style:italic;color:var(--muted);margin-top:8px}
-    h2{color:var(--accent);margin-top:0}
-    .blue_box{border:10px solid blue;padding:.5em;margin:.5em;width:150px;height:100px;float:right}
-    .red_box{border:10px solid red;padding:.5em;margin:.5em;width:20px;height:20px;float:right}
-    .center{text-align:center}
-    ul.family-list li{padding:4px 0}
-    footer{font-size:13px;color:#666;text-align:center;padding:14px}
-    @media(max-width:640px){nav{justify-content:center}}
-  </style>
-</head>
-<body>
-<header>
-  <div class="container">
-    <h1>Demeke Tafesse Kebede — Full Training Materials & Family</h1>
-  </div>
-</header>
-<nav>
-  <div class="container" style="display:flex;gap:12px;flex-wrap:wrap">
-    <a href="#training">Training</a>
-    <a href="#ethiopia">Ethiopia</a>
-    <a href="#family">Family</a>
-    <a href="#images">Images</a>
-    <a href="#examples">Examples</a>
-  </div>
-</nav>
-<div class="container">
-  <section id="training" class="card">
-    <h2>Intro — HTML Notes</h2>
-    <p>This page is a collection of my training notes, examples, and family information.</p>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demeke Tafesse Kebede – HTML Notes & Family</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Tangerine&display=swap" rel="stylesheet">
+<style>
+:root{
+--bg:#f6f7fb;
+--card:#ffffff;
+--muted:#6b7280;
+--accent:#0ea5a4;
+--accent-2:#2563eb;
+--max-width:1000px;
+--radius:12px;
+--shadow: 0 8px 24px rgba(16,24,40,0.08);
+}
+*{box-sizing:border-box}
+body{
+margin:0; font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:linear-gradient(180deg,#f8fafc 0%,var(--bg) 100%); color:#111827; line-height:1.5;
+-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+}
+.wrap{max-width:var(--max-width); margin:28px auto; padding:24px;}
+header{display:flex;gap:18px;align-items:center}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:68px;height:68px;border-radius:12px;overflow:hidden;flex:0 0 68px;box-shadow:var(--shadow)}
+.logo img{width:100%;height:100%;object-fit:cover;display:block}
+h1{margin:0;font-size:1.6rem}
+p.lead{margin:6px 0 0;color:var(--muted)}
 
-    <!-- Family photo at the beginning -->
-    <div class="image-container">
-      <img src="Demeke_TK_Family_Photo.jpg" alt="Demeke Tafesse Family Photo">
-      <div class="caption">Demeke Tafesse Kebede — Family Photo</div>
-    </div>
 
-    <h3>The Web</h3>
-    <p>The Web (or World Wide Web) is a collection of documents and other files. Most documents are made using HTML.</p>
+nav{margin-top:18px;display:flex;gap:8px;flex-wrap:wrap}
+.nav-link{background:var(--card);padding:8px 12px;border-radius:999px;text-decoration:none;color:var(--accent-2);font-weight:600;box-shadow:0 4px 12px rgba(37,99,235,0.06)}
 
-    <h3>What is HTML?</h3>
-    <p>HTML stands for <em>Hypertext Markup Language</em>. It's used to define the structure or layout of a web page.</p>
 
-    <h3>Whitespace examples</h3>
-    <p>Aah! I'm confused about <em>whitespace</em>.</p>
-    <p>Aah!<br>I'm<br>confused<br>about <em>whitespace</em>.</p>
-    <p>My name is <sub>Demeke Tafesse Kebede</sub><br>My name is <sup>Demeke Tafesse Kebede</sup></p>
-    <p>This is a <em>very <mark>important</mark></em> message.</p>
+.hero{display:grid;grid-template-columns:1fr 380px;gap:20px;margin-top:20px}
+.content{background:linear-gradient(180deg,white, #fcfdff); padding:20px;border-radius:var(--radius);box-shadow:var(--shadow)}
+.card{background:var(--card);padding:16px;border-radius:10px;margin-bottom:14px;box-shadow:0 6px 18px rgba(15,23,42,0.04)}
 
-    <h3>Chemistry notes</h3>
-    <p><strong>Molecule name:</strong> <em>Sulfur hexafluoride</em></p>
-    <p><strong>Molecular formula:</strong> SF<sub>6</sub></p>
-    <p><strong>Note:</strong> This gas has a much higher density than air — basically the opposite of helium. <mark>Crazy!</mark></p>
 
-  </section>
+.family-photo{border-radius:10px;overflow:hidden;border:1px solid #e6eef2}
+.family-photo img{width:100%;height:auto;display:block}
+.caption{padding:10px 0;text-align:center;color:var(--muted);font-style:italic}
 
-  <section id="ethiopia" class="card">
-    <h2>About Ethiopia</h2>
-    <h3>History</h3>
-    <p>Ethiopia is one of the world's oldest nations. It includes ancient kingdoms such as D’mt and Aksum, and it successfully resisted colonization — notably winning the Battle of Adwa (1896).</p>
 
-    <h3>Geography</h3>
-    <p>Located in the Horn of Africa, Ethiopia features highlands, the Great Rift Valley, the Blue Nile (Abay), and varied climates from cool mountains to hot lowlands.</p>
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 
-    <h3>Economy</h3>
-    <p>The economy relies on agriculture (coffee, teff, pulses), growing manufacturing and services, and energy projects (hydropower). Ethiopia has seen strong growth in recent decades.</p>
 
-    <h3>Population & Regions</h3>
-    <p>Population is over 100 million. Major administrative regions include Amhara, Oromia, Tigray, Somali, Afar, South (SNNPR), Sidama, Benishangul-Gumuz, Gambela, Harari, Southwest, and Addis Ababa city.</p>
+h2{margin:0 0 8px}
+h3{margin:0 0 6px;font-size:1rem}
+small{color:var(--muted)}
 
-    <h3>Religion</h3>
-    <p>Major religions: Ethiopian Orthodox Christianity, Islam, Protestant Christianity — with ancient monastic traditions and religious festivals.</p>
 
-    <h3>Ethnic Groups</h3>
-    <p>Ethiopia is ethnically diverse (Oromo, Amhara, Tigray, Somali, Sidama, Gurage, Afar, and many others).</p>
+ul{margin:8px 0 0;padding-left:18px}
+li{margin:6px 0}
 
-    <p>More: <a href="https://en.wikipedia.org/wiki/Ethiopia" target="_blank" rel="noopener">Ethiopia — Wikipedia</a></p>
-  </section>
 
-  <section id="family" class="card">
-    <h2>My Family</h2>
-    <h3>Parents</h3>
-    <ul class="family-list">
-      <li><strong>Father:</strong> Tafesse Kebede</li>
-      <li><strong>Mother:</strong> Zenebech Tadesse</li>
-    </ul>
+.family-list{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.family-item{background:#fbfdff;border-radius:8px;padding:8px;border:1px solid #eef6f6}
 
-    <h3>Brothers</h3>
-    <ul class="family-list">
-      <li>Getachew</li>
-      <li>Belete</li>
-      <li>Mekonnen</li>
-      <li>Gebeyehu</li>
-      <li>Tadesse</li>
-      <li>Tadele</li>
-    </ul>
 
-    <h3>Sisters</h3>
-    <ul class="family-list">
-      <li>Masresha</li>
-      <li>Sintayehu</li>
-      <li>Yerom</li>
-    </ul>
+a{color:var(--accent-2);text-decoration:none}
+a.button{display:inline-block;padding:8px 12px;background:var(--accent);color:white;border-radius:8px;text-decoration:none;font-weight:600}
 
-    <h3>Short Family Story</h3>
-    <p>Our family—led by Tafesse Kebede and Zenebech Tadesse—values unity, hard work, and education. The siblings helped each other grow, shared responsibilities at home, and built careers and lives rooted in respect and love.</p>
 
-    <!-- Family photo in the middle -->
-    <div class="image-container" id="images">
-      <img src="Demeke_TK_Family_Photo.jpg" alt="Demeke Family Photo">
-      <div class="caption">Demeke Tafesse Kebede — Family Photo (middle)</div>
-    </div>
-  </section>
+footer{margin-top:22px;color:var(--muted);font-size:0.9rem}
 
-  <section id="examples" class="card">
-    <h2>Examples & Exercises</h2>
-    <p>This section contains many of the examples from your training.</p>
 
-    <h3>Paragraphs & Breaks</h3>
-    <p>This the first paragraph. The background color of these paragraphs have been colored to distinguish them from their parent element.</p>
-    <p>This is the second paragraph.</p>
-    <p>Call me Ishmael.</p>
-    <p>Just don't call me late for dinner.</p>
+/* responsive */
+@media (max-width:980px){
+.hero{grid-template-columns:1fr}
+.grid-2{grid-template-columns:1fr}
+.grid-3{grid-template-columns:1fr}
+.family-list{grid-template-columns:1fr}
+}
 
-    <h3>Lists</h3>
-    <ol>
-      <li>Learn HTML.</li>
-      <li>Learn CSS.</li>
-      <li>Learn Python.</li>
-      <li>Save the world.</li>
-    </ol>
-    <ol>
-      <li>Demeke</li>
-      <li>Tafesse</li>
-      <li>Kebede</li>
-    </ol>
-    <ul>
-      <li>Demeke</li>
-      <li>Tafesse</li>
-      <li>Kebede</li>
-    </ul>
 
-    <h3>Animals</h3>
-    <ul>
-      <li>Mammals
-        <ol type="a">
-          <li>Raccoons</li>
-          <li>Gorillas</li>
-        </ol>
-      </li>
-      <li>Reptiles
-        <ol type="a">
-          <li>Iguanas</li>
-          <li>Cobras</li>
-        </ol>
-      </li>
-      <li>Birds
-        <ol type="a">
-          <li>Ostriches</li>
-          <li>Ravens</li>
-        </ol>
-      </li>
-    </ul>
+/* small decorative flourish */
+.tangerine{font-family:'Tangerine', serif;font-size:28px;color:var(--accent-2)}
 
-    <h3>Color & Styling Examples</h3>
-    <p>This text is inside the <strong>first</strong> paragraph element.</p>
-    <p style="color: blue;">This text is inside the second paragraph element—and it's BLUE!.</p>
-    <p>This text is inside the third paragraph element.</p>
-    <p style="color: blue;">This text is inside the second paragraph element—and it's BLUE!. This text isn't inside<br>any paragraph element ...<br>...yet!</p>
 
-    <h3>Haikus</h3>
-    <p class="center">This is a haiku</p>
-    <p class="center">So I want each line centered</p>
-    <p class="center">Let's make it stylish</p>
-    <p style="color: blue; text-align:center;">Hello world!</p>
+.info-row{display:flex;gap:12px;flex-wrap:wrap}
+.pill{background:#eef9f9;color:#064e4e;padding:6px 10px;border-radius:999px;font-weight:600}
 
-    <h3>Placeholder images</h3>
-    <img src="https://placebear.com/200/200" alt="A picture of a bear.">
-    <img src="https://placekitten.com/200/200" alt="A picture of a kitten.">
-    <p>My favorite things:</p>
-    <ol>
-      <li><a href="https://en.wikipedia.org/wiki/Bear" target="_blank" rel="noopener">Bears</a></li>
-      <li><a href="https://en.wikipedia.org/wiki/Kitten" target="_blank" rel="noopener">Kittens</a></li>
-    </ol>
-    <img src="https://placebear.com/150/150" alt="A picture of a bear.">
-    <img src="https://placecats.com/150/150" alt="A picture of a kitten.">
 
-    <h3>Boxes & Layout</h3>
-    <div class="blue_box">Hooray, a box!<div class="red_box"></div></div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi sit amet mauris commodo...</p>
-
-    <h3>Typography</h3>
-    <div style="font-family:'Tangerine',serif;font-size:48px;margin-top:20px;">Making the Web Beautiful!</div>
-  </section>
-
-  <footer class="card">
-    <p>© Demeke Tafesse Kebede — Training copy. Image file must be in the same folder and named <code>Demeke_TK_Family_Photo.jpg</code>.</p>
-  </footer>
-</div>
-</body>
 </html>
