@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Demeke Tafesse – Family Notes</title>
+  <title>Demeke Tafesse – Full HTML Notes</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -14,6 +14,15 @@
     }
     h1, h2, h3 {
       color: #2c3e50;
+    }
+    p {
+      margin-bottom: 12px;
+    }
+    a {
+      color: #1a0dab;
+    }
+    ol, ul {
+      margin-bottom: 16px;
     }
     .image-container {
       max-width: 600px;
@@ -31,18 +40,36 @@
       color: #555;
       margin-top: 8px;
     }
-    p {
-      margin-bottom: 12px;
+    .blue_box {
+      border: 10px solid blue;
+      padding: 0.5em;
+      margin: 0.5em;
+      width: 150px;
+      height: 100px;
+      float: right;
     }
-    ol, ul {
-      margin-bottom: 16px;
+    .red_box {
+      border: 10px solid red;
+      padding: 0.5em;
+      margin: 0.5em;
+      width: 20px;
+      height: 20px;
+      float: right;
+    }
+    .custom-body {
+      font-family: 'Tangerine', serif;
+      font-size: 48px;
+    }
+    .centered {
+      text-align: center;
     }
   </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 </head>
 <body>
 
   <h1>Demeke Tafesse Kebede – HTML Notes</h1>
-  <p>This page is a collection of my notes and family photos!</p>
+  <p>This page is a collection of my notes, images, and examples about HTML and CSS.</p>
 
   <!-- Family photo -->
   <div class="image-container">
@@ -50,21 +77,38 @@
     <div class="caption">Demeke Tafesse Kebede – Family Photo</div>
   </div>
 
+  <!-- Intro -->
   <h2>The Web</h2>
   <p>The Web (or World Wide Web) is a collection of documents and other files. Most documents are made using HTML.</p>
 
   <h2>What is HTML?</h2>
   <p>HTML stands for <em>Hypertext Markup Language</em>. It's used to define the structure or layout of a web page.</p>
 
+  <!-- Whitespace examples -->
   <h2>Whitespace Examples</h2>
   <p>Aah! I'm confused about <em>whitespace</em>.</p>
   <p>Aah!<br>I'm<br>confused<br>about <em>whitespace</em>.</p>
+  <p>My name is <sub>Demeke Tafesse Kebede</sub><br>My name is <sup>Demeke Tafesse Kebede</sup></p>
+  <p>This is a <em>very <mark>important</mark></em> message.</p>
 
+  <!-- Chemistry notes -->
   <h2>My Chemistry Notes</h2>
   <p><strong>Molecule name:</strong> <em>Sulfur hexafluoride</em></p>
   <p><strong>Molecular formula:</strong> SF<sub>6</sub></p>
   <p><strong>Note:</strong> This gas has a much higher density than air. Basically the opposite of helium. <mark>Crazy!</mark></p>
 
+  <!-- Paragraph color examples -->
+  <p style="color: red;">Make me red!</p>
+  <p style="color: green;">Make me green!</p>
+  <p style="color: blue;">Make me blue!</p>
+
+  <!-- Centered text / haiku -->
+  <p class="centered">This is a haiku</p>
+  <p class="centered">So I want each line centered</p>
+  <p class="centered">Let’s make it stylish</p>
+  <p style="color: blue; text-align: center;">Hello world!</p>
+
+  <!-- Lists -->
   <h2>Lists</h2>
   <ol>
     <li>Learn HTML</li>
@@ -101,9 +145,23 @@
     </li>
   </ul>
 
+  <!-- Floating boxes -->
+  <div class="blue_box">
+    Blue box
+    <div class="red_box"></div>
+  </div>
+
+  <!-- More images -->
+  <img src="https://placebear.com/200/200" alt="A picture of a bear.">
+  <img src="https://placekitten.com/200/200" alt="A picture of a kitten.">
+
+  <!-- Links -->
   <h2>Links</h2>
   <p><a href="https://github.com/">GitHub</a></p>
   <p><a href="http://google.com/">The Example Page</a></p>
+
+  <!-- Custom font section -->
+  <div class="custom-body">Making the Web Beautiful!</div>
 
 </body>
 </html>
