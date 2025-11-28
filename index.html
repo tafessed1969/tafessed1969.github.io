@@ -1,102 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Demeke Tafesse Kebede – Family & Ethiopia</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
-<style>
-body { margin:0; font-family: 'Roboto', sans-serif; background:#f4f4f4; }
-/* Top Navigation */
-.topnav { background:#003366; padding:15px 20px; color:white; font-size:22px; font-weight:700; }
-.topnav a { color:white; margin:0 15px; text-decoration:none; font-weight:400; }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demeke Tafesse Kebede – Family & Ethiopia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f4f6f8;
+      color: #333;
+    }
 
-/* Layout */
-.container { display:flex; }
-.sidebar { width:220px; background:#ffffff; padding:20px; min-height:100vh; border-right:3px solid #e0e0e0; }
-.sidebar h3 { margin-top:0; color:#003366; }
-.sidebar a { display:block; margin:10px 0; text-decoration:none; color:#003366; }
+    /* --- TOP NAV --- */
+    .topnav {
+      width: 100%;
+      background: #003366;
+      color: white;
+      padding: 15px 20px;
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
 
+    /* --- LAYOUT GRID --- */
+    .layout {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+    }
 
-.content { flex:1; padding:30px; }
+    /* --- SIDEBAR --- */
+    .sidebar {
+      background: #ffffff;
+      padding: 25px;
+      min-height: 100vh;
+      box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+    }
 
+    .sidebar h3 {
+      margin-top: 0;
+      font-weight: 700;
+      color: #003366;
+    }
 
-.section { background:#fff; padding:25px; margin-bottom:25px; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
-.section h2 { margin-top:0; color:#003366; }
-.photo { max-width:600px; margin:20px auto; text-align:center; }
-.photo img { width:100%; border-radius:10px; border:2px solid #ccc; }
-.caption { font-style:italic; margin-top:8px; color:#555; }
-</style>
+    .sidebar a {
+      display: block;
+      padding: 8px 0;
+      text-decoration: none;
+      color: #003366;
+      font-weight: 500;
+    }
+
+    .sidebar a:hover {
+      color: #0066cc;
+    }
+
+    /* --- MAIN CONTENT --- */
+    .content {
+      padding: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #003366;
+      font-size: 26px;
+    }
+
+    .image-container {
+      max-width: 500px;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    .image-container img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .caption {
+      margin-top: 8px;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
 </head>
+
 <body>
+  <div class="topnav">Demeke Tafesse Kebede</div>
 
+  <div class="layout">
 
-<div class="topnav">
-Demeke Tafesse Kebede
-<span style="float:right;">
-<a href="#ethiopia">About Ethiopia</a>
-<a href="#family">My Family</a>
-<a href="#gallery">Gallery</a>
-</span>
-</div>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <h3>Navigation</h3>
+      <a href="#photo">Family Photo</a>
+      <a href="#eth">About Ethiopia</a>
+      <a href="#hist">History</a>
+      <a href="#geo">Geography</a>
+      <a href="#eco">Economy</a>
+      <a href="#reg">Regions</a>
+      <a href="#rel">Religion</a>
+      <a href="#fam">Family Story</a>
+    </div>
 
+    <!-- MAIN CONTENT AREA -->
+    <div class="content">
 
-<div class="container">
-<div class="sidebar">
-<h3>Menu</h3>
-<a href="#intro">Introduction</a>
-<a href="#ethiopia">Ethiopia Overview</a>
-<a href="#history">History</a>
-<a href="#geography">Geography</a>
-<a href="#economy">Economy</a>
-<a href="#population">Population</a>
-<a href="#regions">Regions</a>
-<a href="#ethnic">Ethnic Groups</a>
-<a href="#religion">Religion</a>
-<a href="#family">Family Story</a>
-<a href="#gallery">Gallery</a>
-</div>
+      <div id="photo" class="card">
+        <h2>Family Photo</h2>
+        <div class="image-container">
+          <img src="https://raw.githubusercontent.com/tafessed1969/Family-Tafesse/main/Demeke_TK_Family_Photo.jpg" alt="Family Photo">
+          <div class="caption">Demeke Tafesse Kebede – Family Photo</div>
+        </div>
+      </div>
 
+      <!-- ETHIOPIA SECTION -->
+      <div id="eth" class="card">
+        <h2>About Ethiopia</h2>
+        <p>Ethiopia is one of the world's oldest nations, rich in culture, history, and natural beauty.</p>
+      </div>
 
-<div class="content">
+      <div id="hist" class="card">
+        <h2>History of Ethiopia</h2>
+        <p>From the Aksumite Empire to the victory at Adwa and the modern federal system, Ethiopia's history spans thousands of years.</p>
+      </div>
 
+      <div id="geo" class="card">
+        <h2>Geography</h2>
+        <p>Ethiopia features the Great Rift Valley, high mountains, lowlands, and one of the most diverse landscapes in Africa.</p>
+      </div>
 
-<div id="intro" class="section">
-<h2>Welcome</h2>
-<p>Welcome to my modern family and Ethiopia information website. This page is designed as a clean, organized, and beautiful presentation of my work, family, and country.</p>
-</div>
+      <div id="eco" class="card">
+        <h2>Economy</h2>
+        <p>The economy is based on agriculture, industry, and services, with the GERD project being a major national investment.</p>
+      </div>
 
+      <div id="reg" class="card">
+        <h2>Regional States</h2>
+        <p>Ethiopia has 11 regions and 2 chartered cities, including Addis Ababa and Dire Dawa.</p>
+      </div>
 
-<div class="photo">
-<img src="https://raw.githubusercontent.com/tafessed1969/Family-Tafesse/main/Demeke_TK_Family_Photo.jpg" alt="Family Photo">
-<div class="caption">Demeke Tafesse Kebede – Family Photo</div>
-</div>
+      <div id="rel" class="card">
+        <h2>Religion</h2>
+        <p>Major religions include Ethiopian Orthodox Christianity, Islam, Protestant Christianity, and traditional beliefs.</p>
+      </div>
 
+      <!-- FAMILY SECTION -->
+      <div id="fam" class="card">
+        <h2>My Family Story</h2>
+        <p><strong>Father:</strong> Tafesse Kebede</p>
+        <p><strong>Mother:</strong> Zenebech Tadesse</p>
 
-<div id="ethiopia" class="section">
-<h2>About Ethiopia</h2>
-<p>Ethiopia is one of the oldest nations in the world with thousands of years of history, cultural diversity, and unique traditions.</p>
-</div>
+        <h3>Brothers</h3>
+        <ul>
+          <li>Getachew</li>
+          <li>Belete</li>
+          <li>Mekonnen</li>
+          <li>Gebeyehu</li>
+          <li>Tadesse</li>
+          <li>Tadele</li>
+        </ul>
 
+        <h3>Sisters</h3>
+        <ul>
+          <li>Masresha</li>
+          <li>Sintayehu</li>
+          <li>Yerom</li>
+        </ul>
+      </div>
 
-<div id="history" class="section">
-<h2>History of Ethiopia</h2>
-<p>Ethiopia is known for its ancient civilization, including the Aksumite Empire, one of the great civilizations of the ancient world. It is also one of the only African countries that was never colonized.</p>
-</div>
-
-
-<div id="geography" class="section">
-<h2>Geography</h2>
-<p>Ethiopia features highlands, lowlands, mountains, lakes, and the Great Rift Valley. It is the source of the Blue Nile River.</p>
-</div>
-
-
-<div id="economy" class="section">
-<h2>Economy</h2>
-<p>The economy is based on agriculture, services, and emerging industries. Major exports include coffee, gold, livestock, seeds, and horticulture.</p>
-</div>
-
-
-<div id="population" class="section">
+    </div>
+  </div>
+</body>
 </html>
