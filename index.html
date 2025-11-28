@@ -144,14 +144,11 @@ li span:hover { transform: scale(1.3) rotate(15deg); }
 .fact-box { background: linear-gradient(135deg, var(--ethiopia-green), var(--secondary)); color: white; padding: 1rem; border-radius: 8px; margin-bottom: 1rem; text-align: center; }
 .fact-box h4 { margin-bottom: 0.5rem; }
 .quote { font-style: italic; border-left: 4px solid var(--ethiopia-yellow); padding-left: 1rem; margin: 1rem 0; color: #555; }
-
-/* Remove the media queries that change layout to vertical */
-/* @media (max-width:1024px) { 
-  .main-content { flex-direction:column; } 
-  .sidebar { order:1; } 
-  .content { order:2; } 
-  .right-panel { order:3; }
-} */
+.region-list { list-style-type: none; padding-left: 0; }
+.region-list li { margin-bottom: 0.5rem; padding: 0.5rem; border-left: 3px solid var(--ethiopia-green); background-color: #f8f9fa; transition: all 0.3s; }
+.region-list li:hover { background-color: #e9ecef; transform: translateX(5px); }
+.region-list a { color: var(--primary); text-decoration: none; display: block; }
+.region-list a:hover { color: var(--secondary); }
 
 /* Keep only adjustments for smaller screens that don't change layout */
 @media (max-width:768px) { 
@@ -488,22 +485,22 @@ li span:hover { transform: scale(1.3) rotate(15deg); }
         </div>
         
         <h3>Administrative Regions</h3>
-        <p>Ethiopia is a federal parliamentary republic consisting of 11 regional states and 2 chartered cities.</p>
-        <ul>
-          <li>Afar Region</li>
-          <li>Amhara Region</li>
-          <li>Benishangul-Gumuz Region</li>
-          <li>Central Ethiopia Region (SNNPR)</li>
-          <li>Gambela Region</li>
-          <li>Harari Region</li>
-          <li>Oromia Region</li>
-          <li>Sidama Region</li>
-          <li>Somali Region</li>
-          <li>South Ethiopia Region</li>          
-          <li>Southwest Ethiopia Region</li>
-          <li>Tigray Region</li>
-          <li>Addis Ababa (capital)</li>
-          <li>Dire Dawa</li>
+        <p>Ethiopia is a federal parliamentary republic consisting of 11 regional states and 2 chartered cities. Click on any region to learn more:</p>
+        <ul class="region-list">
+          <li><a href="https://en.wikipedia.org/wiki/Afar_Region" target="_blank">Afar Region</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Amhara_Region" target="_blank">Amhara Region</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Benishangul-Gumuz_Region" target="_blank">Benishangul-Gumuz Region</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Central_Ethiopia_Region" target="_blank">Central Ethiopia Region</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Gambela_Region" target="_blank">Gambela Region</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Harari_Region" target="_blank">Harari Region</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Oromia_Region" target="_blank">Oromia Region</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Sidama_Region" target="_blank">Sidama Region</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Somali_Region" target="_blank">Somali Region</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/South_Ethiopia_Region" target="_blank">South Ethiopia Region</a></li>          
+          <li><a href="https://en.wikipedia.org/wiki/Southwest_Ethiopia_Region" target="_blank">Southwest Ethiopia Region</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Tigray_Region" target="_blank">Tigray Region</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Addis_Ababa" target="_blank">Addis Ababa (capital)</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Dire_Dawa" target="_blank">Dire Dawa</a></li>
         </ul>
       </section>
 
