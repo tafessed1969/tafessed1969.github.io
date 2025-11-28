@@ -42,7 +42,7 @@ a[data-tooltip]:hover::after {
   white-space: nowrap;
   z-index: 10;
 }
-.container { max-width:1200px; margin:0 auto; padding:0 20px; }
+.container { max-width:1400px; margin:0 auto; padding:0 20px; }
 header { 
   background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
               url('https://images.unsplash.com/photo-1593115057322-e94b77572f20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
@@ -69,7 +69,8 @@ header {
 .flag-stripe.red { background-color: var(--ethiopia-red); }
 .main-content { display:flex; flex-wrap:wrap; gap:2rem; margin:2rem 0; }
 .sidebar { flex:1; min-width:250px; background:white; border-radius:8px; padding:1.5rem; box-shadow:0 4px 8px rgba(0,0,0,0.05); }
-.content { flex:3; min-width:300px; background:white; border-radius:8px; padding:2rem; box-shadow:0 4px 8px rgba(0,0,0,0.05); }
+.content { flex:2; min-width:300px; background:white; border-radius:8px; padding:2rem; box-shadow:0 4px 8px rgba(0,0,0,0.05); }
+.right-panel { flex:1; min-width:250px; background:white; border-radius:8px; padding:1.5rem; box-shadow:0 4px 8px rgba(0,0,0,0.05); }
 .image-container { max-width:100%; margin:20px auto; text-align:center; }
 .image-container img { width:100%; height:auto; border:3px solid #ddd; border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.1); }
 .caption { text-align:center; margin-top:8px; font-style:italic; color:#666; }
@@ -107,10 +108,19 @@ li span:hover { transform: scale(1.3) rotate(15deg); }
 .card h3 { color: var(--primary); margin-bottom: 1rem; }
 .back-to-top { position: fixed; bottom: 20px; right: 20px; background-color: var(--secondary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center; text-decoration: none; font-size: 1.5rem; box-shadow: 0 2px 10px rgba(0,0,0,0.2); transition: background-color 0.3s; z-index: 99; }
 .back-to-top:hover { background-color: var(--accent); }
-@media (max-width:768px) { 
+.right-panel-card { background: var(--light); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.right-panel-card img { width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem; }
+.right-panel-card h3 { color: var(--primary); margin-bottom: 1rem; border-bottom: 2px solid var(--secondary); padding-bottom: 0.5rem; }
+.fact-box { background: linear-gradient(135deg, var(--ethiopia-green), var(--secondary)); color: white; padding: 1rem; border-radius: 8px; margin-bottom: 1rem; text-align: center; }
+.fact-box h4 { margin-bottom: 0.5rem; }
+.quote { font-style: italic; border-left: 4px solid var(--ethiopia-yellow); padding-left: 1rem; margin: 1rem 0; color: #555; }
+@media (max-width:1024px) { 
   .main-content { flex-direction:column; } 
-  .sidebar { order:2; } 
-  .content { order:1; } 
+  .sidebar { order:1; } 
+  .content { order:2; } 
+  .right-panel { order:3; }
+}
+@media (max-width:768px) { 
   .animal-list { columns: 2; }
   .stats { flex-direction: column; }
 }
@@ -497,6 +507,53 @@ li span:hover { transform: scale(1.3) rotate(15deg); }
       </section>
 
     </main>
+
+    <!-- Right Panel -->
+    <aside class="right-panel">
+      <div class="right-panel-card">
+        <h3>Ethiopian Coffee Culture</h3>
+        <img src="https://images.unsplash.com/photo-1587734195503-904fca47e0e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Ethiopian Coffee Ceremony">
+        <p>Ethiopia is considered the birthplace of coffee. The traditional coffee ceremony is an important social event that can last for hours, involving roasting beans, brewing, and serving in three rounds called Abol, Tona, and Baraka.</p>
+      </div>
+
+      <div class="fact-box">
+        <h4>Did You Know?</h4>
+        <p>Ethiopia follows its own calendar with 13 months - 12 months of 30 days each and a 13th month of 5 or 6 days.</p>
+      </div>
+
+      <div class="right-panel-card">
+        <h3>Simien Mountains</h3>
+        <img src="https://images.unsplash.com/photo-1593693397697-4c5870ad5d0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Simien Mountains">
+        <p>The Simien Mountains are a UNESCO World Heritage Site known as the "Roof of Africa." They're home to unique wildlife including the Ethiopian wolf, Walia ibex, and Gelada baboon.</p>
+      </div>
+
+      <div class="right-panel-card">
+        <h3>Traditional Cuisine</h3>
+        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Ethiopian Food">
+        <p>Ethiopian cuisine features injera (a sourdough flatbread) served with various stews (wats). Meals are traditionally eaten with the hands, using pieces of injera to scoop up the food.</p>
+      </div>
+
+      <div class="quote">
+        "Ethiopia is a land of hidden treasures, a country with a rich history, diverse cultures, and breathtaking landscapes that continue to captivate visitors from around the world."
+      </div>
+
+      <div class="right-panel-card">
+        <h3>Lalibela Rock Churches</h3>
+        <img src="https://images.unsplash.com/photo-1587734195503-904fca47e0e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Lalibela Churches">
+        <p>The rock-hewn churches of Lalibela, built in the 12th century, are considered one of the world's greatest architectural marvels. Carved entirely from solid rock, these churches remain active places of worship today.</p>
+      </div>
+
+      <div class="fact-box">
+        <h4>Ethiopian Time</h4>
+        <p>Ethiopia uses a 12-hour clock system that counts from dawn (6 AM = 0:00) to dusk (6 PM = 12:00), creating a unique timekeeping system different from the rest of the world.</p>
+      </div>
+
+      <div class="right-panel-card">
+        <h3>Festivals & Celebrations</h3>
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Ethiopian Festival">
+        <p>Ethiopia celebrates unique festivals like Timkat (Epiphany), Meskel (Finding of the True Cross), and Enkutatash (New Year). These celebrations feature colorful processions, traditional music, and vibrant cultural displays.</p>
+      </div>
+    </aside>
   </div>
 </div>
 
