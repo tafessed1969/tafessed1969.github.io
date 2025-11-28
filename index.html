@@ -3,82 +3,106 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Demeke Tafesse Kebede - HTML Notes & Family Story</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <title>Demeke Tafesse – Family Notes</title>
   <style>
-    :root {
-      --primary: #2c3e50;
-      --secondary: #3498db;
-      --accent: #e74c3c;
-      --light: #ecf0f1;
-      --dark: #2c3e50;
-      --success: #2ecc71;
-      --warning: #f39c12;
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background-color: #f9f9f9;
+      color: #333;
     }
-    body {font-family:'Open Sans',sans-serif;background:#f9f9f9;color:#333;}
-    h1,h2,h3,h4 {font-family:'Montserrat',sans-serif;color:var(--primary);} 
-    header {background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;padding:2rem 0;text-align:center;}
-    .container {max-width:1200px;margin:auto;padding:0 20px;}
-    .main-content {display:flex;gap:2rem;margin:2rem 0;flex-wrap:wrap;}
-    .sidebar {flex:1;min-width:250px;background:#fff;padding:1.5rem;border-radius:8px;box-shadow:0 4px 8px rgba(0,0,0,0.05);} 
-    .content {flex:3;min-width:300px;background:#fff;padding:2rem;border-radius:8px;box-shadow:0 4px 8px rgba(0,0,0,0.05);} 
-    .nav-links li {margin-bottom:.5rem;} 
-    .nav-links a {display:block;padding:.75rem 1rem;background:var(--light);border-radius:4px;} 
-    .image-container img {width:100%;border-radius:8px;} 
-    .section-card {background:#fff;padding:1.5rem;border-left:4px solid var(--secondary);border-radius:8px;margin-bottom:2rem;} 
-    footer {background:var(--primary);color:#fff;text-align:center;padding:2rem 0;margin-top:3rem;} 
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    .image-container {
+      max-width: 600px;
+      margin: 20px auto;
+      text-align: center;
+    }
+    .image-container img {
+      width: 100%;
+      height: auto;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+    }
+    .caption {
+      font-style: italic;
+      color: #555;
+      margin-top: 8px;
+    }
+    p {
+      margin-bottom: 12px;
+    }
+    ol, ul {
+      margin-bottom: 16px;
+    }
   </style>
 </head>
 <body>
-<header>
-  <div class="header-content">
-    <h1>Demeke Tafesse Kebede</h1>
-    <p>HTML Notes, Family Story & Ethiopian Heritage</p>
-  </div>
-</header>
-<div class="container">
-  <div class="main-content">
-    <aside class="sidebar">
-      <h2>Quick Navigation</h2>
-      <ul class="nav-links">
-        <li><a href="#html-notes">HTML Notes</a></li>
-        <li><a href="#family-story">Family Story</a></li>
-        <li><a href="#ethiopia">About Ethiopia</a></li>
-        <li><a href="#history">History</a></li>
-        <li><a href="#geography">Geography</a></li>
-        <li><a href="#economy">Economy</a></li>
-        <li><a href="#population">Population</a></li>
-        <li><a href="#culture">Culture</a></li>
-      </ul>
-      <div class="image-container">
-        <img src="https://raw.githubusercontent.com/tafessed1969/Family-Tafesse/main/Demeke_TK_Family_Photo.jpg">
-      </div>
-    </aside>
 
-      <aside class="sidebar right-panel">
-        <h2>Resources</h2>
-        <ul class="nav-links">
-          <li><a href="#maps"><i class="fas fa-map"></i> Maps of Ethiopia</a></li>
-          <li><a href="#regions"><i class="fas fa-layer-group"></i> Regional States</a></li>
-          <li><a href="#tourism"><i class="fas fa-tree"></i> Tourism Sites</a></li>
-          <li><a href="#videos"><i class="fas fa-video"></i> Videos & Docs</a></li>
-        </ul>
-      </aside>
-    <main class="content">
-      <section id="html-notes" class="section-card"><h2>My HTML Notes</h2><p>Notes...</p></section>
-      <section id="family-story" class="section-card"><h2>My Family Story</h2><p>Father: Tafesse Kebede<br>Mother: Zenebech Tadesse<br>Brothers: Getachew, Belete, Mekonnen, Gebeyehu, Tadesse, Tadele<br>Sisters: Masresha, Sintayehu, Yerom</p></section>
-      <section id="ethiopia" class="section-card"><h2>About Ethiopia</h2><p>Ethiopia overview...</p></section>
-      <section id="history" class="section-card"><h2>History</h2><p>Ancient to modern Ethiopian history...</p></section>
-      <section id="geography" class="section-card"><h2>Geography</h2><p>Mountains, lakes, rivers...</p></section>
-      <section id="economy" class="section-card"><h2>Economy</h2><p>Agriculture, services, industry...</p></section>
-      <section id="population" class="section-card"><h2>Population & Regions</h2><p>120M+ population, 11 regions...</p></section>
-      <section id="culture" class="section-card"><h2>Culture & Ethnic Groups</h2><p>Ethnic groups, religion, languages...</p></section>
-    </main>
+  <h1>Demeke Tafesse Kebede – HTML Notes</h1>
+  <p>This page is a collection of my notes and family photos!</p>
+
+  <div class="image-container">
+    <img src="https://raw.githubusercontent.com/tafessed1969/Family-Tafesse/main/Demeke_TK_Family_Photo.jpg" alt="Family Photo">
+    <div class="caption">Demeke Tafesse Kebede – Family Photo</div>
   </div>
-</div>
-<footer>
-  <p>&copy; 2023 Demeke Tafesse Kebede</p>
-</footer>
+
+  <h2>The Web</h2>
+  <p>The Web (or World Wide Web) is a collection of documents and other files. Most documents are made using HTML.</p>
+
+  <h2>What is HTML?</h2>
+  <p>HTML stands for <em>Hypertext Markup Language</em>. It's used to define the structure or layout of a web page.</p>
+
+  <h2>Whitespace Examples</h2>
+  <p>Aah! I'm confused about <em>whitespace</em>.</p>
+  <p>Aah!<br>I'm<br>confused<br>about <em>whitespace</em>.</p>
+
+  <h2>My Chemistry Notes</h2>
+  <p><strong>Molecule name:</strong> <em>Sulfur hexafluoride</em></p>
+  <p><strong>Molecular formula:</strong> SF<sub>6</sub></p>
+  <p><strong>Note:</strong> This gas has a much higher density than air. Basically the opposite of helium. <mark>Crazy!</mark></p>
+
+  <h2>Lists</h2>
+  <ol>
+    <li>Learn HTML</li>
+    <li>Learn CSS</li>
+    <li>Learn Python</li>
+    <li>Save the world</li>
+  </ol>
+
+  <ul>
+    <li>Demeke</li>
+    <li>Tafesse</li>
+    <li>Kebede</li>
+  </ul>
+
+  <h2>Animals Example</h2>
+  <ul>
+    <li>Mammals
+      <ol type="a">
+        <li>Raccoons</li>
+        <li>Gorillas</li>
+      </ol>
+    </li>
+    <li>Reptiles
+      <ol type="a">
+        <li>Iguanas</li>
+        <li>Cobras</li>
+      </ol>
+    </li>
+    <li>Birds
+      <ol type="a">
+        <li>Ostriches</li>
+        <li>Ravens</li>
+      </ol>
+    </li>
+  </ul>
+
+  <h2>Links</h2>
+  <p><a href="https://github.com/">GitHub</a></p>
+  <p><a href="http://google.com/">The Example Page</a></p>
+
 </body>
 </html>
