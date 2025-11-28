@@ -40,13 +40,22 @@ header { background:linear-gradient(135deg,var(--primary),var(--secondary)); col
 .section-card { background:white; border-radius:8px; padding:1.5rem; margin-bottom:2rem; box-shadow:0 4px 8px rgba(0,0,0,0.05); border-left:4px solid var(--secondary); }
 .code-block { background:#2d2d2d; color:#f8f8f2; padding:1rem; border-radius:4px; overflow-x:auto; margin:1rem 0; font-family:'Courier New', monospace; }
 .family-members { display:flex; flex-wrap:wrap; gap:1rem; margin:1.5rem 0; }
-.family-member { flex:1; min-width:200px; background:var(--light); padding:1rem; border-radius:8px; text-align:center; }
+.family-member { flex:1; min-width:200px; background:var(--light); padding:1rem; border-radius:8px; text-align:center; cursor:pointer; }
 .family-member i { font-size:2rem; color:var(--secondary); margin-bottom:0.5rem; }
 .ethiopia-flag { height:20px; width:30px; display:inline-block; background:linear-gradient(to bottom,#078930 33%,#FCDD09 33%,#FCDD09 66%,#DA121A 66%); margin-right:8px; border-radius:2px; vertical-align:middle; }
 footer { background:var(--primary); color:white; text-align:center; padding:2rem 0; margin-top:3rem; }
 .social-links { margin-top:1rem; }
 .social-links a { color:white; font-size:1.5rem; margin:0 10px; transition:color 0.3s; }
 .social-links a:hover { color:var(--secondary); }
+
+/* Lightbox popup */
+.lightbox {
+  position:fixed; display:none; justify-content:center; align-items:center;
+  top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:1000;
+}
+.lightbox img { max-width:90%; max-height:80%; border-radius:8px; }
+.lightbox:target { display:flex; }
+
 @media (max-width:768px) { .main-content { flex-direction:column; } .sidebar { order:2; } .content { order:1; } }
 </style>
 </head>
@@ -78,11 +87,11 @@ footer { background:var(--primary); color:white; text-align:center; padding:2rem
       <!-- HTML Notes -->
       <section id="html-notes" class="section-card">
         <h2>My HTML Notes</h2>
-        <p>This page is a collection of my awesome notes about HTML!</p>
+        <p>This section contains my personal notes and tips on HTML. It includes examples, syntax, and best practices to create web pages efficiently.</p>
         <h3>The Web</h3>
-        <p>The Web (World Wide Web) is a collection of documents and files. Most are made using HTML.</p>
+        <p>The Web (World Wide Web) is a collection of documents and files. Most are made using HTML. Learn more <a href="https://en.wikipedia.org/wiki/World_Wide_Web" target="_blank">here</a>.</p>
         <h3>What is HTML?</h3>
-        <p>HTML stands for <em>Hypertext Markup Language</em>. It defines the structure or layout of a web page.</p>
+        <p>HTML stands for <em>Hypertext Markup Language</em>. It defines the structure and layout of a web page. Check official documentation <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">here</a>.</p>
         <div class="code-block">
           &lt;!DOCTYPE html&gt;<br>
           &lt;html&gt;<br>
@@ -100,7 +109,7 @@ footer { background:var(--primary); color:white; text-align:center; padding:2rem
       <!-- Family Story -->
       <section id="family-story" class="section-card">
         <h2>My Family Story</h2>
-        <p>I come from a large and wonderful Ethiopian family.</p>
+        <p>I come from a large and wonderful Ethiopian family. We value education, culture, and community. Below are details of my immediate family members.</p>
         <div class="family-members">
           <div class="family-member"><i class="fas fa-user"></i><h4>Father</h4><p>Tafesse Kebede</p></div>
           <div class="family-member"><i class="fas fa-user"></i><h4>Mother</h4><p>Zenebech Tadesse</p></div>
@@ -125,28 +134,34 @@ footer { background:var(--primary); color:white; text-align:center; padding:2rem
       <!-- About Ethiopia -->
       <section id="ethiopia" class="section-card">
         <h2><span class="ethiopia-flag"></span> About Ethiopia</h2>
-        <p>Ethiopia is located in the Horn of Africa. It has over 120 million people and a long history.</p>
+        <p>Ethiopia is a country in the Horn of Africa. It is one of the oldest nations in the world with rich history, culture, and traditions. Learn more <a href="https://en.wikipedia.org/wiki/Ethiopia" target="_blank">here</a>.</p>
       </section>
 
       <!-- History Timeline -->
       <section id="history-timeline" class="section-card">
         <h2>History Timeline</h2>
-        <ul style="list-style:none; padding-left:0;">
-          <li style="margin-bottom:1rem;"><strong>100 AD - 940 AD:</strong> Kingdom of Aksum 📜</li>
-          <li style="margin-bottom:1rem;"><strong>4th Century:</strong> Adoption of Christianity ⛪</li>
-          <li style="margin-bottom:1rem;"><strong>1270-1974:</strong> Solomonic Dynasty 🏰</li>
-          <li style="margin-bottom:1rem;"><strong>1936-1941:</strong> Italian Occupation ⚔️</li>
+        <p>Ethiopia has a fascinating history spanning thousands of years. Here are some key milestones:</p>
+        <ul>
+          <li><strong>100 AD - 940 AD:</strong> Kingdom of Aksum 📜</li>
+          <li><strong>4th Century:</strong> Adoption of Christianity ⛪</li>
+          <li><strong>1270-1974:</strong> Solomonic Dynasty 🏰</li>
+          <li><strong>1936-1941:</strong> Italian Occupation ⚔️</li>
         </ul>
       </section>
 
       <!-- Gallery -->
       <section id="gallery" class="section-card">
         <h2>Gallery</h2>
+        <p>Click on the images to view them in full size.</p>
         <div class="family-members">
-          <div class="family-member"><img src="https://raw.githubusercontent.com/tafessed1969/Family-Tafesse/main/Demeke_TK_Family_Photo.jpg" alt="Family Photo" style="width:100%; border-radius:8px;"><p>Family Photo</p></div>
-          <div class="family-member"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Lalibela_rock_hewn_churches.jpg" alt="Lalibela Churches" style="width:100%; border-radius:8px;"><p>Lalibela Churches</p></div>
-          <div class="family-member"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Ethiopia_regions_map.png" alt="Ethiopia Map" style="width:100%; border-radius:8px;"><p>Regional Map</p></div>
+          <a href="#img1" class="family-member"><img src="https://raw.githubusercontent.com/tafessed1969/Family-Tafesse/main/Demeke_TK_Family_Photo.jpg" alt="Family Photo" style="width:100%; border-radius:8px;"><p>Family Photo</p></a>
+          <a href="#img2" class="family-member"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Lalibela_rock_hewn_churches.jpg" alt="Lalibela Churches" style="width:100%; border-radius:8px;"><p>Lalibela Churches</p></a>
+          <a href="#img3" class="family-member"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Ethiopia_regions_map.png" alt="Ethiopia Map" style="width:100%; border-radius:8px;"><p>Regional Map</p></a>
         </div>
+        <!-- Lightbox -->
+        <div id="img1" class="lightbox"><a href="#"><img src="https://raw.githubusercontent.com/tafessed1969/Family-Tafesse/main/Demeke_TK_Family_Photo.jpg" alt="Family Photo"></a></div>
+        <div id="img2" class="lightbox"><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Lalibela_rock_hewn_churches.jpg" alt="Lalibela Churches"></a></div>
+        <div id="img3" class="lightbox"><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Ethiopia_regions_map.png" alt="Ethiopia Map"></a></div>
       </section>
 
       <!-- Music & Language -->
@@ -170,9 +185,9 @@ footer { background:var(--primary); color:white; text-align:center; padding:2rem
     <p>&copy; 2025 Demeke Tafesse Kebede - HTML Notes & Family Story</p>
     <p>Celebrating Ethiopian Heritage and Web Development</p>
     <div class="social-links">
-      <a href="https://github.com/tafessed1969"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/yourprofile"><i class="fab fa-linkedin"></i></a>
-      <a href="https://twitter.com/yourprofile"><i class="fab fa-twitter"></i></a>
+      <a href="https://github.com/tafessed1969" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
     </div>
   </div>
 </footer>
